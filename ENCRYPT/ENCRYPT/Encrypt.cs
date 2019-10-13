@@ -13,7 +13,9 @@ namespace ENCRYPT
             byte[] stream = null;
             StringBuilder sb = new StringBuilder();
             stream = md5.ComputeHash(encoding.GetBytes(str));
-            for (int i = 0; i < stream.Length; i++) sb.AppendFormat("{0:x2}", stream[i]);
+            for (int i = 0; i < stream.Length; i++){
+                sb.AppendFormat("{0:x2}", stream[i]);
+            }
             return sb.ToString();
         }
         public static string Base64Encode(string str){
@@ -30,7 +32,9 @@ namespace ENCRYPT
             byte[] stream = null;
             StringBuilder sb = new StringBuilder();
             stream = sha1.ComputeHash(encoding.GetBytes(str));
-            for (int i = 0; i < stream.Length; i++) sb.AppendFormat("{0:x2}", stream[i]);
+            for (int i = 0; i < stream.Length; i++){
+                sb.AppendFormat("{0:x2}", stream[i]);
+            }
             return sb.ToString();
         }
         public static string SHA256(string str){
@@ -39,7 +43,9 @@ namespace ENCRYPT
             byte[] stream = null;
             StringBuilder sb = new StringBuilder();
             stream = sha256.ComputeHash(encoding.GetBytes(str));
-            for (int i = 0; i < stream.Length; i++) sb.AppendFormat("{0:x2}", stream[i]);
+            for (int i = 0; i < stream.Length; i++){
+                sb.AppendFormat("{0:x2}", stream[i]);
+            }
             return sb.ToString();
         }
         public static string SHA384(string str){
@@ -48,7 +54,9 @@ namespace ENCRYPT
             byte[] stream = null;
             StringBuilder sb = new StringBuilder();
             stream = sha384.ComputeHash(encoding.GetBytes(str));
-            for (int i = 0; i < stream.Length; i++) sb.AppendFormat("{0:x2}", stream[i]);
+            for (int i = 0; i < stream.Length; i++){
+                sb.AppendFormat("{0:x2}", stream[i]);
+            }
             return sb.ToString();
         }
         public static string SHA512(string str){
@@ -57,7 +65,9 @@ namespace ENCRYPT
             byte[] stream = null;
             StringBuilder sb = new StringBuilder();
             stream = sha512.ComputeHash(encoding.GetBytes(str));
-            for (int i = 0; i < stream.Length; i++) sb.AppendFormat("{0:x2}", stream[i]);
+            for (int i = 0; i < stream.Length; i++){
+                sb.AppendFormat("{0:x2}", stream[i]);
+            }
             return sb.ToString();
         }
     }
