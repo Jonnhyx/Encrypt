@@ -1,1 +1,2 @@
 C:\Users\jontn\source\repos\ENCRYPT\ENCRYPT\obj\Debug\ENCRYPT.csprojAssemblyReference.cache
+C:\Users\jontn\Documents\GitHub\Encrypt\ENCRYPT\ENCRYPT\obj\Debug\ENCRYPT.csprojAssemblyReference.cache
